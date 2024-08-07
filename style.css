@@ -7,7 +7,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 4fr;
     grid-template-areas:
         'sidebar header'
         'sidebar article';
@@ -23,6 +23,8 @@ body {
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 10% 3% repeat(10, 5%);
+
+    padding-right: 10px;
   }
   
   .sidebar img {
@@ -62,12 +64,26 @@ body {
     gap: 2%;
 }
 
+.header > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+}
+
 .search {
     flex: 1;
 }
 
 .about {
     flex: 1.25;
+}
+
+.flex-content:first-child {
+    flex: 2;
+}
+
+.flex-content:last-child {
+    width: 320px;
 }
 
 .content {
