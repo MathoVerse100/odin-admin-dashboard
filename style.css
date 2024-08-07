@@ -3,3 +3,29 @@
     padding: 0;
     /* border: 1px solid black; */
 }
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas:
+        'sidebar header'
+        'sidebar article';
+    gap: 5px;
+
+    min-height: 100vh;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: rgb(0, 179, 255);
+
+}
+
+.header {
+    grid-area: header;
+}
+
+.content {
+    grid-area: article;
+}
