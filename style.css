@@ -27,13 +27,13 @@ body {
     padding-right: 10px;
   }
   
-  .sidebar img {
+.sidebar img {
     height: 70%;
     width: auto;
     object-fit: cover;
-  }
+}
   
-  .icon {
+.icon {
     display: flex;
     align-items: center;
     box-sizing: border-box;
@@ -41,49 +41,23 @@ body {
     padding: 0;
     font-weight: 1000;
     color: white; 
-  }
+}
   
-  .icon:nth-child(odd) {
+.icon:nth-child(odd) {
     justify-self: center;
-  }
+}
   
-  .icon:nth-child(even) {
+.icon:nth-child(even) {
     font-size: clamp(16px, 1.25vw, 1.25vw);
-  }
+}
   
-  .icon:nth-child(2) {
+.icon:nth-child(2) {
     font-size: clamp(1.5rem, 2vw, 2vw);;
-  }
+}
   
 
 .header {
     grid-area: header;
-
-    display: flex;
-    flex-direction: column;
-    gap: 2%;
-}
-
-.header > div {
-    display: flex;
-    flex-direction: row;
-    justify-content: stretch;
-}
-
-.search {
-    flex: 1;
-}
-
-.about {
-    flex: 1.25;
-}
-
-.flex-content:first-child {
-    flex: 2;
-}
-
-.flex-content:last-child {
-    width: 320px;
 }
 
 .content {
